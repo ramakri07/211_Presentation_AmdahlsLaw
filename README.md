@@ -42,7 +42,7 @@ The hot code got about 165x faster, but the whole program got only about 43x fas
 
 ## Finding the hot spot: profilers
 
-You find the hot 10% by measuring instead of guessing, using a profiler. In practice people are usually bad at guessing There are two common kinds:
+You find the hot 10% by measuring instead of guessing, using a profiler. In practice people are usually bad at guessing. There are two common kinds:
 
 Sampling (snapshot) profilers pause the program at regular intervals and record which function it is in. The functions that show up in the most snapshots are where the time goes. They slow the program very little, but the results are estimates, not exact counts. An example is perf on Linux.
 
