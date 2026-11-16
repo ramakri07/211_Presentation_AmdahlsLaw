@@ -23,12 +23,19 @@ It then computes p, s, Amdahl's predicted speedup, and the measured speedup.
 ## Results (one run)
 
 Cold code (setup): 0.015 s
+
 Hot code, slow: 0.835 s
+
 Hot code, fast: 0.005 s
+
 p (share of time in hot code): 96.4%
+
 s (hot code speedup): 164.6x
+
 Amdahl predicted speedup: 43.11x
+
 Measured speedup: 43.11x
+
 Ceiling, 1/(1 - p): 58.04x
 
 The hot code got about 165x faster, but the whole program got only about 43x faster, because the setup code I didn't touch now takes most of the time. Timings vary by machine, but the pattern holds.
